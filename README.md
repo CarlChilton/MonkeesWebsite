@@ -20,5 +20,15 @@ https://github.com/Code-Institute-Org/project-assets
 Main banner image : 
 https://www.wearenice.com.au/tours/the-monkees
 
+Mobile banner image : 
+https://www.hollywoodreporter.com/news/monkees-tour-michael-nesmith-sold-out-362860
+
 Monkees Logo: 
 https://www.bandlogojukebox.com/blog/2017/12/4/m1-the-monkees
+
+Monkees detail and information: 
+https://en.wikipedia.org/wiki/The_Monkees
+
+
+
+

@@ -19,6 +19,7 @@ body {
 .navbar {
     height: 55px;
     background-color: white;
+    z-index: 1;
 }
 .navbar::after {
     width: 100vw;
@@ -91,17 +92,37 @@ body {
 }
 
 /* Main body section */
-
-.mainBody {
+.pageBreak {
+    height: 3px;
+    border-color: #464646;
+}
+main {
+    background-color: #f2f2f2;
     height: calc(100vh - 140px);
-    overflow-y: scroll;
-    background-color: red;
-    z-index: -3;
     transform: skew(-2deg) rotate(-2deg);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
     top: 17px;
+}
+main.homepage {
+    overflow: hidden;
+}
+.mainBody {
+    overflow-y: visible;
+    top: 0;
+    height: 100%;
     position: relative;
     width: 100vw;
     padding: 0;
+    color:  #464646;
+    font-size: 20px;
+    margin: 0;
+}
+.mainBody h2, .mainBody h3 {
+    font-weight: bold;
+    margin-top: 0;
 }
 .heroImage {
     height: 100%;
@@ -112,7 +133,23 @@ body {
     background-repeat: no-repeat;
     background-position: center 20%;
 }
-
+.aboutUsContainer {
+    padding-top: 20px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.aboutUsContainer .row {
+    margin: 0;
+}
+.aboutUsContainer img {
+    border: solid  #464646 3px;
+    padding-left: -15px;
+    padding-right: -15px;
+    margin-bottom: 20px;
+}
 /* Footer */
 
 .footerSection {
@@ -129,18 +166,30 @@ body {
     font-size: 10px;
     font-weight: bold;
     bottom: 50px;
+    user-select: none;
+    display: none;
 }
 .socialMediaContainer {
     float: right;
     font-size: 30px;
     margin-top: 5px;
-    margin-right: 40px;
+    margin-right: 5vw;
 }
 .socialMediaContainer a {
     color: #464646;
+    transition: color 0.2s ease-out;
 }
+.socialMediaContainer a:hover {
+    color: red;
+}
+
 /* Media queries */
 
+@media only screen and (min-width: 360px) { 
+    .whoDunnit {
+        display: block;    
+    }
+}
 @media only screen and (min-width: 576px) {
     .heroImage {
         background-image: url('/assets/images/homepage-banner.jpg');
@@ -161,12 +210,15 @@ body {
     .navbar-nav #watch {
         margin-top: 12px;
     }
-    .navbar-nav #book {
+    .navbar-nav #albums {
         margin-top: 10px;
+    }
+    .navbar-nav #book {
+        margin-top: 8px;
     }
     #navbarLinks {
         top: 0;
-        right: 10vw;
+        right: 3vw;
         position: absolute;
     }
     
