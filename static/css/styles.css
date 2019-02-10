@@ -124,6 +124,9 @@ main.homepage {
     font-weight: bold;
     margin-top: 0;
 }
+
+/* Home Page */
+
 .heroImage {
     height: 100%;
     width: 100%;
@@ -133,6 +136,9 @@ main.homepage {
     background-repeat: no-repeat;
     background-position: center 20%;
 }
+
+/* About Us Page */
+
 .aboutUsContainer {
     padding-top: 20px;
     max-width: 1170px;
@@ -150,6 +156,34 @@ main.homepage {
     padding-right: -15px;
     margin-bottom: 20px;
 }
+
+/* Listen Page */
+#listenPage {
+    margin-bottom: 20px;
+    -webkit-backface-visibility: visible;
+}
+#listenPage h2 {
+    margin: 20px 40px;
+}
+#listenPage h3 {
+    margin: 20px 40px 30px;
+}
+.audioPlayer {
+    width: 100%;
+    cursor: pointer;
+}
+.audioTrackContainer {
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 1px 1px 4px rgba(70,70,70,0.8);
+    -webkit-backface-visibility: hidden;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.audioTrackContainer h3 {
+    margin-left: 20px;
+}
+
 /* Footer */
 
 .footerSection {
