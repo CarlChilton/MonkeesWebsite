@@ -158,6 +158,11 @@ main.homepage {
 }
 
 /* Listen Page */
+.listenContainer {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #listenPage {
     margin-bottom: 20px;
     -webkit-backface-visibility: visible;
@@ -182,6 +187,27 @@ main.homepage {
 }
 .audioTrackContainer h3 {
     margin-left: 20px;
+}
+
+/* Watch Videos Page */
+
+.watchContainer {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+#watchPage {
+    padding-top: 20px;   
+}
+.daydreamBelieverVid {
+    width: 100%;
+    height: auto;
+}
+.videoContainer {
+    transition: width 0.2s ease-out;
+    margin: 20px auto;   
+    width: 100%;
 }
 
 /* Footer */
@@ -231,6 +257,9 @@ main.homepage {
     }
 }
 @media only screen and (min-width: 768px) {
+    .videoContainer {
+        width: 70%;
+    } 
     /* Stagger the nav links on desktop */
     .navbar-nav #home {
         margin-top: 18px;

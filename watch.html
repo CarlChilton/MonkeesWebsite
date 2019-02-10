@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="static/css/styles.css" type="text/css" />
 	<script type="text/javascript" src="static/js/script.js"></script>
 	
-	<title>The Monkees</title>
+	<title>The Monkees - Watch Videos</title>
 	
 </head>
 
@@ -41,10 +41,10 @@
   			</button>
   			<div class="collapse navbar-collapse" id="navbarLinks">
 				<ul class="nav navbar-nav">
-					<li id="home" class="active"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+					<li id="home"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
 					<li id="about"><a href="about.html"><i class="fas fa-info"></i>About</a></li>
 					<li id="listen"><a href="listen.html"><i class="fas fa-headphones-alt"></i>Listen</a></li>
-					<li id="watch"><a href="watch.html"><i class="far fa-eye"></i>Watch</a></li>
+					<li id="watch" class="active"><a href="watch.html"><i class="far fa-eye"></i>Watch</a></li>
 					<li id="albums"><a href="#"><i class="fas fa-guitar"></i>Albums</a></li>
 					<li id="book"><a href="#"><i class="fas fa-phone"></i>Book</a></li>
 				</ul>
@@ -52,10 +52,26 @@
 		</nav>
 	</header>	
 	
-	<main class="homepage">
+	<main>
 		<section class="container-fluid mainBody">
-			<div class="heroImage">
-				
+			<div id="watchPage">
+				<div class="watchContainer">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Watch</h2>	
+							<h3>Check out our music video below for Daydream Believer.</h3>
+							<div class="videoContainer">
+								<video class="daydreamBelieverVid" controls>
+									<source src="/assets/video/TheMonkees.mp4" type="video/mp4"/>
+									Sorry, Your browser does not support the video tag. 
+								</video>	
+							</div>
+							<p>The single reached No. 1 on the U.S. Billboard Hot 100 chart in December 1967, 
+							remaining there for four weeks, and peaked at No. 5 in the UK Singles 
+							Chart. It was the Monkees' last No. 1 hit in the U.S.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section> 
 	</main>
