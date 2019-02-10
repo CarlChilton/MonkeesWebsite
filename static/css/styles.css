@@ -1,0 +1,148 @@
+/* Global properties */
+body {
+    overflow: hidden;
+    height: 100vh;
+    font-family: Shadows Into Light;
+}
+/* Navbar and logo */
+#hamburgerMenu {
+    position: absolute;
+    right: 35px;
+    top: 22px;
+    font-size: 23px;
+    background: none;
+    border: solid 2px red;
+    color: red;
+    border-radius: 5px;
+}
+.navbar {
+    height: 55px;
+    background-color: white;
+}
+.navbar::after {
+    width: 100vw;
+    height: 65px;
+    transform: skew(-2deg) rotate(-2deg);
+    content: "";
+    background-color: white;
+    box-shadow: 0 3px 4px rgba(70,70,70,0.7);
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+}
+.navbar-brand {
+    padding-top: 1vw;
+    margin-left: 3vw;
+}
+.navbar-nav {
+    top: 0;
+    position: absolute;
+    right: 10vw;
+}
+.navbar-nav li {
+    transform: rotate(-2deg);
+    position: relative;
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus {
+    background-color: transparent;    
+}
+.navbar-nav li a {
+    color: #464646;
+    text-shadow: 1px 1px 2px white;
+}
+.navbar-nav>li>a:hover i {
+    opacity: 1;
+}
+.navbar-nav i {
+    transform: scale(1.0);
+    position: absolute;
+    z-index: -1;
+    color: rgba(255,0,0,0.7);
+    font-size: 45px;
+    top: 7px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.navbar-nav li.active i {
+    opacity: 1;
+}
+#home i {
+    left: 8px;
+    top: 3px;
+}
+#about i {
+    left: 28px;
+    top: 3px;
+}
+#listen i, #watch i {
+    left: 20px;
+    top: 5px;
+}
+#book i {
+    font-size: 40px;
+    top: 5px;
+    left: 10px;
+}
+
+/* Main body section */
+
+.mainBody {
+    height: calc(100vh - 140px);
+    overflow-y: scroll;
+    background-color: red;
+    z-index: -3;
+    transform: skew(-2deg) rotate(-2deg);
+    top: 17px;
+    position: relative;
+    width: 100vw;
+}
+
+/* Footer */
+
+.footerSection {
+    width: 100vw;
+    background-color: white;
+    transform: skew(-2deg) rotate(-2deg);
+    height: 68px;
+    position: relative;
+    bottom: -17px;
+    box-shadow: 0 -3px 4px rgba(70,70,70,0.7);
+}
+.whoDunnit {
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    bottom: 50px;
+}
+.socialMediaContainer {
+    float: right;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+.socialMediaContainer a {
+    color: #464646;
+}
+/* Media queries */
+
+@media only screen and (min-width: 768px) {
+    /* Stagger the nav links on desktop */
+    .navbar-nav #home {
+        margin-top: 18px;
+    }
+    .navbar-nav #about {
+        margin-top: 16px;
+    }
+    .navbar-nav #listen {
+        margin-top: 14px;
+    }
+    .navbar-nav #watch {
+        margin-top: 12px;
+    }
+    .navbar-nav #book {
+        margin-top: 10px;
+    }
+}
