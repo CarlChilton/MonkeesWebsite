@@ -14,6 +14,7 @@ body {
     border: solid 2px red;
     color: red;
     border-radius: 5px;
+    outline: none;
 }
 .navbar {
     height: 55px;
@@ -34,10 +35,11 @@ body {
     padding-top: 1vw;
     margin-left: 3vw;
 }
-.navbar-nav {
-    top: 0;
+#navbarLinks {
+    top: 65px;
     position: absolute;
-    right: 10vw;
+    overflow: hidden;
+    right: 3px;
 }
 .navbar-nav li {
     transform: rotate(-2deg);
@@ -69,6 +71,7 @@ body {
 .navbar-nav li.active i {
     opacity: 1;
 }
+
 #home i {
     left: 8px;
     top: 3px;
@@ -98,6 +101,16 @@ body {
     top: 17px;
     position: relative;
     width: 100vw;
+    padding: 0;
+}
+.heroImage {
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/images/homepage-banner-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 20%;
 }
 
 /* Footer */
@@ -128,6 +141,12 @@ body {
 }
 /* Media queries */
 
+@media only screen and (min-width: 576px) {
+    .heroImage {
+        background-image: url('/assets/images/homepage-banner.jpg');
+        background-size: cover;
+    }
+}
 @media only screen and (min-width: 768px) {
     /* Stagger the nav links on desktop */
     .navbar-nav #home {
@@ -145,4 +164,10 @@ body {
     .navbar-nav #book {
         margin-top: 10px;
     }
+    #navbarLinks {
+        top: 0;
+        right: 10vw;
+        position: absolute;
+    }
+    
 }
