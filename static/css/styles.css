@@ -124,6 +124,9 @@ main.homepage {
     font-weight: bold;
     margin-top: 0;
 }
+.unSkew {
+    transform: skew(2deg) rotate(2deg);
+}
 
 /* Home Page */
 
@@ -156,6 +159,9 @@ main.homepage {
     padding-right: -15px;
     margin-bottom: 20px;
 }
+.aboutUsDescription {
+    margin-top: 20px;
+}
 
 /* Listen Page */
 .listenContainer {
@@ -184,6 +190,7 @@ main.homepage {
     -webkit-backface-visibility: hidden;
     margin-bottom: 20px;
     padding: 10px 0;
+    
 }
 .audioTrackContainer h3 {
     margin-left: 20px;
@@ -195,10 +202,7 @@ main.homepage {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-}
-#watchPage {
-    padding-top: 20px;   
+    padding: 20px 40px;
 }
 .daydreamBelieverVid {
     width: 100%;
@@ -208,6 +212,42 @@ main.homepage {
     transition: width 0.2s ease-out;
     margin: 20px auto;   
     width: 100%;
+    
+}
+
+/* Albums Page */
+
+.albumsContainer {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+.albumTile {
+    box-shadow: 1px 1px 4px rgba(70,70,70,0.8);
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: white;
+}
+.albumTile td {
+    padding: 5px 0;
+}
+.albumTile img {
+    margin: 20px;
+}
+.albumDescription {
+    width: 100%;
+    padding-bottom: 20px;
+    
+    
+}
+.albumDescription h3 {
+    text-align: center;
 }
 
 /* Footer */
@@ -285,4 +325,9 @@ main.homepage {
         position: absolute;
     }
     
+}
+@media only screen and (max-height: 420px) {
+    .videoContainer {
+        width: 80%;
+    } 
 }

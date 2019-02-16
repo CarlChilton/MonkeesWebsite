@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- Bootstrap CSS and JavaScript -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Acme|Caveat|Gloria+Hallelujah|Permanent+Marker|Righteous|Shadows+Into+Light" rel="stylesheet"> 
+	
+	<!-- Custom CSS and JavaScript -->
+	<link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+	<script type="text/javascript" src="static/js/script.js"></script>
+	
+	<title>The Monkees</title>
+	
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img id="monkeesLogo" width="60%" src="assets/images/logo.jpg" alt="Monkees Logo"/>	
+				</a>
+			</div>
+			<button id="hamburgerMenu" class="navbar-toggler hidden-sm hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarLinks">
+				<ul class="nav navbar-nav">
+					<li id="home"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+					<li id="about"><a href="about.html"><i class="fas fa-info"></i>About</a></li>
+					<li id="listen"><a href="listen.html"><i class="fas fa-headphones-alt"></i>Listen</a></li>
+					<li id="watch"><a href="watch.html"><i class="far fa-eye"></i>Watch</a></li>
+					<li id="albums" class="active"><a href="albums.html"><i class="fas fa-guitar"></i>Albums</a></li>
+					<li id="book"><a href="#"><i class="fas fa-phone"></i>Book</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	
+	<main>
+		<section class="container-fluid mainBody">
+			<div id="albumsPage">
+				<div class="albumsContainer unSkew">
+					<div class="row">
+						<h2>Albums</h2>
+						<div class="albumTile col-xs-12 col-sm-6 col-md-3">
+							<img width="50%" src="/assets/images/cover.jpg" alt="Album 1"/>
+							<div class="albumDescription">
+								<h3>The Monkees<br/>Greatest Hits</h3>
+								<table> 
+								<col width="25%">
+								<col width="75%">
+									<tr>
+										<th>No.</th>
+										<th>Title</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>(Theme From) The Monkees</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Last Train to Clarksville</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>I Wanna Be Free</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>I'm A Believer</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>(I'm Not Your) Stepping Stone</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Mary, Mary</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>A Little Bit Me, A Little Bit You</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>The Girl I Knew Somewhere</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Randy Scouse Git</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Pleasant Valley Sunday</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Words</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Daydream Believer</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Goin Down</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>Valleri</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>D. W. Washburn</td>
+									</tr>
+								</table>
+							</div>
+						</div>	
+						<div class="albumTile col-xs-12 col-sm-6 col-md-3">
+							<img width="50%" src="/assets/images/cover1.jpg" alt="Album 2"/>
+							<div class="albumDescription">
+								<h3>More Of<br/>The Monkees</h3>
+								<table> 
+								<col width="25%">
+								<col width="75%">
+									<tr>
+										<th>No.</th>
+										<th>Title</th>
+									</tr>
+									<tr><td>Side 1</td></tr>
+									<tr>
+										<td>1</td>
+										<td>She</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>When Love Comes Knockin'</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Mary, Mary</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Hold On Girl</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Your Auntie Grizelda</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Stepping Stone</td>
+									</tr>
+									<tr><td>Side 2</td></tr>
+									<tr>
+										<td>1</td>
+										<td>Look Out</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>The Kind of Girl I Could Love</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>The Day We Fall In Love</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Sometime In The Morning</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Laugh</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>I'm a Believer</td>
+									</tr>
+									
+								</table>
+							</div>
+						</div>	
+						<div class="albumTile col-xs-12 col-sm-6 col-md-3">
+							<img width="50%" src="/assets/images/cover2.png" alt="Album 3"/>
+							<div class="albumDescription">
+								<h3>Live 1967</h3>
+								<table> 
+								<col width="25%">
+								<col width="75%">
+									<tr>
+										<th>No.</th>
+										<th>Title</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Last Train To Clarksville</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>You Just May Be The One</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>The Girl I Knew Somewhere</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>I Wanna Be Free</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Sunny Girlfriend</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Your Auntie Grizelda</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Forget That Girl</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Sweet Young Thing</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Mary, Mary</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Cripple Creek</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>You Can't Judge A Book By Its Cover</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Gonna Build A Mountain</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>I Got A Woman</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>I'm A Believer</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>Randy Scouse Git</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Stepping Stone</td>
+									</tr>
+									
+								</table>
+							</div>
+						</div>	
+						<div class="albumTile col-xs-12 col-sm-6 col-md-3">
+							<img width="50%" src="/assets/images/cover3.jpg" alt="Album 4"/>
+							<div class="albumDescription">
+								<h3>The Birds, The Bees<br/>& The Monkees</h3>
+								<table> 
+								<col width="25%">
+								<col width="75%">
+									<tr>
+										<th>No.</th>
+										<th>Title</th>
+									</tr>
+									<tr><td>Side 1</td></tr>
+									<tr>
+										<td>1</td>
+										<td>Dream World</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Auntie's Municipal Court</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>We Were Made For Each Other</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Tapioca Tundra</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Daydream Believer</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Writing Wrongs</td>
+									</tr>
+									<tr><td>Side 2</td></tr>
+									<tr>
+										<td>1</td>
+										<td>I'll Be Back Up On My Feet</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>The Poster</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>P.O. Box 9847</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Magnolia Simms</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Valleri</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Zor and Zam</td>
+									</tr>
+								</table>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section> 
+	</main>
+	
+	<footer>
+		<section class="container-fluid footerSection">
+			<!--<i class="far fa-question-circle hidden-lg hidden-md hidden-sm"></i>-->
+			<div class="whoDunnit">Developed by Carl Chilton - CB Creative</div>
+			<div class="socialMediaContainer">
+				<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
+				<a href="#" class="youtube"><i class="fab fa-youtube-square"></i></a>
+			</div>
+		</section>
+	</footer>
+	
+</body>
+
+</html>
