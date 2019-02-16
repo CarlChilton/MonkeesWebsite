@@ -17,6 +17,7 @@ body {
     outline: none;
 }
 .navbar {
+    user-select: none;
     height: 55px;
     background-color: white;
     z-index: 1;
@@ -203,6 +204,7 @@ main.homepage {
     margin-left: auto;
     margin-right: auto;
     padding: 20px 40px;
+    margin-top: 20px;
 }
 .daydreamBelieverVid {
     width: 100%;
@@ -248,6 +250,32 @@ main.homepage {
 }
 .albumDescription h3 {
     text-align: center;
+}
+
+/* Contact page */
+
+.bookContainer {
+    padding: 20px;    
+    margin-top: 20px;
+}
+#contactForm {
+    margin-top: 20px;   
+}
+#contactForm input {
+    border: solid 2px #464646;   
+}
+#contactForm textarea {
+    border: solid 2px #464646;
+    resize: none;
+}
+#contactForm .btnSubmit {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(255,0,0,0.1);
+    border: solid 2px #464646;
+    color: #464646;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -297,6 +325,11 @@ main.homepage {
     }
 }
 @media only screen and (min-width: 768px) {
+    #contactForm {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .videoContainer {
         width: 70%;
     } 
