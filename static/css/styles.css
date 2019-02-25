@@ -173,10 +173,10 @@ main.homepage {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 #listenPage {
     margin-bottom: 20px;
-    -webkit-backface-visibility: visible;
 }
 #listenPage h2 {
     margin: 20px 40px;
@@ -192,7 +192,6 @@ main.homepage {
     margin-left: 30px;
     margin-right: 30px;
     box-shadow: 1px 1px 4px rgba(70,70,70,0.8);
-    -webkit-backface-visibility: hidden;
     margin-bottom: 20px;
     padding: 10px 0;
     

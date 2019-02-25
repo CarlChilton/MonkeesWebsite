@@ -30,5 +30,10 @@ Monkees detail and information:
 https://en.wikipedia.org/wiki/The_Monkees
 
 
+## Technologies
+
+The site comprises entirely of HTML and CSS, with the form using HTML 5 patterns to validate content. 
+The site has been tested through browserstack in order to ensure responsiveness.
+
 
 
