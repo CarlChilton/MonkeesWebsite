@@ -4,13 +4,6 @@ body {
     height: 100vh;
     font-family: Shadows Into Light;
 }
-.desktopImage {
-    display: none;
-}
-.mobileImage {
-    position: relative;
-    top: -33px;
-}
 /* Navbar and logo */
 #hamburgerMenu {
     position: absolute;
@@ -145,7 +138,7 @@ main.homepage {
 .heroImage {
     height: 100%;
     width: 100%;
-    background-image: url('./assets/images/homepage-banner-mobile.jpg');
+    background-image: url('../../assets/images/homepage-banner-mobile.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -330,14 +323,8 @@ main.homepage {
 }
 @media only screen and (min-width: 576px) {
     .heroImage {
-        /*background-image: url('./assets/images/homepage-banner.jpg');*/
+        background-image: url('../../assets/images/homepage-banner.jpg');
         background-size: cover;
-    }
-    .mobileImage {
-        display: none;
-    }
-    .desktopImage {
-        display: block;
     }
 }
 @media only screen and (min-width: 768px) {
